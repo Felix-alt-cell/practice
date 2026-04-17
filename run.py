@@ -1,9 +1,16 @@
-a = 147
-print("a", a)
+# dunder = double underscore: __builtIn__, __init__
 
-message = "Hello"
+message = "everything is Object in python"
 print(message)
 
-a1 = 2  
-print(a1)
-print("a1", a1)
+result = type(message)
+print('result:', result)
+
+''' in python there are built-in tools
+(1)types: int, float, string,list, dict
+(2)functions: print(), type(), len()
+(3)constants: true, false, none 
+
+'''
+
+print(dir(__builtins__))
