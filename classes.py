@@ -51,3 +51,48 @@ print("new_message:", new_message)
 
 #static method
 Person.class_message()
+
+
+print("===== special/magic methods =====")
+
+# Python's most common special methods are below:
+# __init__ __new__ __str__ __call__ __getitem__ __eq__ __len__ ...
+
+class Car():
+
+    # state
+    description = "This class makes cars"
+
+    # constructor
+    def __new(cls, *args):
+        print("new")
+        return super().__new__(cls)
+
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+
+    # method
+    def start_engine(self):
+        print(f"the {self.name} started engine!")
+
+    def stop_engine(self):
+        print(f"the {self.name} stopped engine!")
+
+    def __str__(self):
+        return f"{self.name} was produced in {self.year} year!"
+
+    def __call__(self):
+        print("Object called as function!")
+
+
+my_car = Car("Ferrari", 2025)
+my_car.start_engine()
+my_car.stop_engine()
+
+print("-----")
+
+your_car = Car("Toyota", 2026)
+print(your_car)
+
+your_car() 
