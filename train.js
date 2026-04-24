@@ -1,28 +1,68 @@
 
+// D-TASK (NodeJS)
+
+// Shunday function tuzingki 
+// unga integerlardan iborat array pass bolsin 
+// va function bizga osha arrayning 
+// eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) 
+// return qiladi 1 sonini.
+
+// solution
+
+function getHighestIndex(list) {
+
+    let max = list[0];
+    let index = 0;
+
+    for (let a = 0; a < list.length; a++) {
+
+        if (list[a] > max) {
+            max = list[a];
+            index = a;
+        }
+
+    }
+
+    return index;
+}
+
+let list = [5, 90, 0, 5, 4];
+
+console.log(getHighestIndex(list));
+
+
+
+
+
+
+
+
+
 // C-TASK (NodeJS)
 
 // Shunday function tuzing, 
 // u 2ta string parametr ega bolsin, 
 // hamda agar har ikkala string bir hil 
 // harflardan iborat bolsa true aks holda false qaytarsin
-// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
-
-function checkContent(a, b) {
 
 
-    if (a.length !== b.length) {
-        return false;
-    }
+//     if (a.length !== b.length) {
+//         return false;
+//     }
 
-    let sorted1 = a.split("").sort().join("");
-    let sorted2 = b.split("").sort().join("");
+//     let sorted1 = a.split("").sort().join("");
+//     let sorted2 = b.split("").sort().join("");
 
-    return sorted1 === sorted2;
-}
+//     return sorted1 === sorted2;
+// }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("Listen", "Silent"));
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("Listen", "Silent"));
 
+// // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+// function checkContent(a, b) {
 
 
 
