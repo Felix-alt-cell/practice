@@ -1,3 +1,19 @@
+// E-TASK (NodeJS)
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+// solution
+function getReverse(str) {
+    return str.split('').reverse().join('');
+}
+
+// test
+console.log(getReverse("MIT40.Group"));
+
+
+
+
 
 // D-TASK (NodeJS)
 
@@ -8,28 +24,28 @@
 // MASALAN: getHighestIndex([5, 21, 12, 21, 8]) 
 // return qiladi 1 sonini.
 
-// solution
+// // solution
 
-function getHighestIndex(list) {
+// function getHighestIndex(list) {
 
-    let max = list[0];
-    let index = 0;
+//     let max = list[0];
+//     let index = 0;
 
-    for (let a = 0; a < list.length; a++) {
+//     for (let a = 0; a < list.length; a++) {
 
-        if (list[a] > max) {
-            max = list[a];
-            index = a;
-        }
+//         if (list[a] > max) {
+//             max = list[a];
+//             index = a;
+//         }
 
-    }
+//     }
 
-    return index;
-}
+//     return index;
+// }
 
-let list = [5, 90, 0, 5, 4];
+// let list = [5, 90, 0, 5, 4];
 
-console.log(getHighestIndex(list));
+// console.log(getHighestIndex(list));
 
 
 
