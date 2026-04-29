@@ -24,4 +24,18 @@ git pull origin master
 - and so on
 
 
+## Pip commands:
+
+```
+   Windows pip | macOs pip3
+
+   pip list
+   pip install pillow
+   pip uninstall pillow
+   pip show pillow
+   pip freeze pillow
+   pip freeze > requirements.txt
+
+```
+
 
