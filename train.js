@@ -1,47 +1,3 @@
-// H-TASK (NodeJS)
-
-// shunday function tuzing, u integerlardan
-//  iborat arrayni argument sifatida qabul qilib,
-//   faqat positive qiymatlarni olib string holatda 
-//   return qilsin
-// MASALAN: getPositive([1, -4, 2]) return qiladi "12"
-
-
-
-function getPositive(arr) {
-    let result = "";
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            result += arr[i];
-        }
-    }
-
-    return result;
-}
-
-console.log(getPositive([1, -4, 2, 70, 0, -3])); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // F-TASK (NodeJS)
 
 // Shunday findDoublers function tuzing, 
@@ -52,14 +8,14 @@ console.log(getPositive([1, -4, 2, 70, 0, -3]));
 
 
 
-// function findDoublers(str) {
-//     let unique = new Set(str);
-//     return unique.size !== str.length;
-// }
+function findDoublers(str) {
+    let unique = new Set(str);
+    return unique.size !== str.length;
+}
 
-// // Test
-// console.log("Answer for 'MIT40TEAM':", findDoublers("MIT40TEAM")); 
-// console.log("Answer for 'abc':", findDoublers("abc"));    
+// Test
+console.log("Answer for 'MIT40TEAM':", findDoublers("MIT40TEAM")); 
+console.log("Answer for 'abc':", findDoublers("abc"));    
 
 
 
